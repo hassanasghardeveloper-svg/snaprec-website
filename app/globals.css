@@ -80,3 +80,58 @@ body {
 .kbd {
   @apply inline-flex items-center justify-center px-2 py-1 text-xs font-medium bg-gray-100 border border-gray-300 rounded text-gray-600;
 }
+
+/* Mobile Responsive Improvements */
+@media (max-width: 640px) {
+  /* Smaller hero text on mobile */
+  h1 {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Reduce padding on mobile */
+  section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* Stack buttons vertically on mobile */
+  .btn-glow {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Disable floating animation on mobile for performance */
+  .float-animation {
+    animation: none;
+  }
+
+  /* Smaller feature cards */
+  .feature-card {
+    padding: 1rem;
+  }
+
+  /* Hide app mockup details on very small screens */
+  .app-shadow {
+    transform: scale(0.9);
+  }
+}
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  .hero-gradient {
+    padding-top: 6rem;
+  }
+}
+
+/* Touch-friendly tap targets */
+@media (hover: none) {
+  .feature-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  a, button {
+    min-height: 44px;
+  }
+}
