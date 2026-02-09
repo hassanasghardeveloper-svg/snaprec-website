@@ -5,6 +5,7 @@ import Link from 'next/link'
 
 // GitHub repo URL - update this after creating the repo
 const GITHUB_REPO = 'https://github.com/hassanasghardeveloper-svg/snaprec-website'
+const DOWNLOAD_URL = 'https://github.com/hassanasghardeveloper-svg/snaprec-website/releases/download/v1.0.0/SnapRec-1.0.0.exe'
 
 // Icons as SVG components for better performance
 const Icons = {
@@ -263,7 +264,7 @@ export default function Home() {
               <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors">Features</a>
               <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors">How it Works</a>
               <a href="#shortcuts" className="text-gray-600 hover:text-gray-900 transition-colors">Shortcuts</a>
-              <a href="/SnapRec-1.0.0.exe" download className="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-lg font-medium transition-colors flex items-center space-x-2">
+              <a href={DOWNLOAD_URL} className="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-lg font-medium transition-colors flex items-center space-x-2">
                 <Icons.Download />
                 <span>Download</span>
               </a>
@@ -285,7 +286,7 @@ export default function Home() {
                 <a href="#features" className="text-gray-600 hover:text-gray-900 transition-colors" onClick={() => setMobileMenuOpen(false)}>Features</a>
                 <a href="#how-it-works" className="text-gray-600 hover:text-gray-900 transition-colors" onClick={() => setMobileMenuOpen(false)}>How it Works</a>
                 <a href="#shortcuts" className="text-gray-600 hover:text-gray-900 transition-colors" onClick={() => setMobileMenuOpen(false)}>Shortcuts</a>
-                <a href="/SnapRec-1.0.0.exe" download className="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2 w-full" onClick={() => setMobileMenuOpen(false)}>
+                <a href={DOWNLOAD_URL} className="bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2 w-full" onClick={() => setMobileMenuOpen(false)}>
                   <Icons.Download />
                   <span>Download</span>
                 </a>
@@ -316,7 +317,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-              <a href="/SnapRec-1.0.0.exe" download className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all btn-glow flex items-center space-x-3">
+              <a href={DOWNLOAD_URL} className="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all btn-glow flex items-center space-x-3">
                 <Icons.Download />
                 <span>Download for Windows</span>
               </a>
