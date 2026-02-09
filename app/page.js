@@ -1,6 +1,10 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
+
+// GitHub repo URL - update this after creating the repo
+const GITHUB_REPO = 'https://github.com/UmarAsghar/snaprec-website'
 
 // Icons as SVG components for better performance
 const Icons = {
@@ -563,9 +567,9 @@ export default function Home() {
             </div>
 
             <div className="flex items-center space-x-6">
-              <a href="#" className="hover:text-white transition-colors">Privacy</a>
-              <a href="#" className="hover:text-white transition-colors">Terms</a>
-              <a href="#" className="hover:text-white transition-colors flex items-center space-x-2">
+              <Link href="/privacy" className="hover:text-white transition-colors">Privacy</Link>
+              <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
+              <a href={GITHUB_REPO} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors flex items-center space-x-2">
                 <Icons.Github />
                 <span>GitHub</span>
               </a>
