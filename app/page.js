@@ -4,7 +4,7 @@ import { useState } from 'react'
 import Link from 'next/link'
 
 // GitHub repo URL - update this after creating the repo
-const GITHUB_REPO = 'https://github.com/UmarAsghar/snaprec-website'
+const GITHUB_REPO = 'https://github.com/hassanasghardeveloper-svg/snaprec-website'
 
 // Icons as SVG components for better performance
 const Icons = {
