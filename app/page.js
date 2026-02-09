@@ -526,8 +526,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <a
-              href="/SnapRec-1.0.0.exe"
-              download
+              href={DOWNLOAD_URL}
               className="bg-white text-red-500 hover:bg-red-50 px-8 py-4 rounded-xl font-semibold text-lg transition-all flex items-center space-x-3 shadow-lg hover:shadow-xl"
             >
               <Icons.Windows />
